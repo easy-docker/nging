@@ -4,7 +4,7 @@ RUN apk upgrade
 
 COPY start.sh /start.sh
 RUN wget -c https://img.nging.coscms.com/nging/v5.3.3/nging_linux_amd64.tar.gz -O /home/nging_linux_amd64.tar.gz \
-  && tar -zxvf /home/nging_linux_amd64.tar.gz -C /home \
+  && tar -zxvf /home/nging_linux_amd64.tar.gz -C /home/nging_linux_amd64 \
   && rm -rf /home/nging_linux_amd64.tar.gz \
   && chmod +x /start.sh
 
